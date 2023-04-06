@@ -6,6 +6,7 @@ import { TasksHeaderComponent } from './components/tasks-header/tasks-header.com
 import { TasksDetailsComponent } from './components/tasks-details/tasks-details.component';
 import { TasksViewComponent } from './components/tasks-view/tasks-view.component';
 import { LayoutsComponent } from './layouts/layouts.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LayoutsComponent } from './layouts/layouts.component';
     LayoutsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

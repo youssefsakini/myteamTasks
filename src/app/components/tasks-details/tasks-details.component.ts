@@ -24,11 +24,15 @@ export class TasksDetailsComponent {
       icone: 'fa fa-refresh'
     }
   ];
-  showMenu = true;
+  showMenu: boolean = true;
+  inputText: string = '';
+  toggleBtn: boolean = false;
 
   toggleMenu() {
     this.showMenu = !this.showMenu;
-    console.log(this.showMenu);
-    
+  }
+
+  toggleAddBtn(){
+    this.toggleBtn = !!this.inputText;
   }
 }

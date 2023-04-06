@@ -1,0 +1,83 @@
+.countainer{
+    width: 60vw;
+    margin-left: 210px;
+}
+
+.fa-home{
+    font-size: xx-large;
+}
+
+.add_task{
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.input_div input{
+    width: 100vw;
+    border: none;
+    height: 6vh;
+}
+
+input:focus {
+    outline: none;
+}
+
+.task_buttons{
+    height: 5vh;
+}
+
+.add_btn{
+    border: none;
+    border-radius: 3px;
+}
+
+.created_task{
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-button {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(203, 203, 203);
+  }
+  
+  .arrow {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 5px solid black;
+    margin-right: 5px;
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(-90deg);
+
+  }
+  
+  .arrow.up {
+    transform: rotate(-180deg);
+  }
+  
+  .content {
+    padding: 10px;
+    background-color: #fff;
+  }
+
+  ul{
+    list-style: none;
+    font-size: small;
+  }
+
+  ul li{
+    padding-left: 12px;
+  }
+
+  .point{
+    color: rgb(182, 182, 182);
+    font-size: larger;
+  }

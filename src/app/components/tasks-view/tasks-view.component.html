@@ -1,1 +1,67 @@
-<p>tasks-view works!</p>
+<div class="countainer">
+
+    <div class="task_header d-flex justify-content-between mb-4">
+        <div class="task_title d-flex">
+            <i class="fa fa-home mt-1 mx-1"></i> 
+            <h3 class="mt-1">Tâches</h3>
+        </div>
+        <div class="task_sort mt-2">
+            <i class="fa fa-sort-amount-asc"></i> 
+            Trier
+        </div>
+    </div>
+
+    <div class="add_task">
+        <div class="input_div d-flex">
+            <div class="mt-2 mx-2">
+                <i class="fa fa-circle-thin"></i>
+            </div>
+            <input type="text" placeholder="Ajouter une tâche">
+        </div>
+        <div class="task_buttons d-flex justify-content-between my-3">
+            <div class="task_icones d-flex my-1">
+                <i title="Ajouter une date d'échéance" class="fa fa-calendar mx-3"></i>
+                <i title="Rappel" class="fa fa-bell"></i>
+                <i title="Répéter" class="fa fa-refresh mx-3"></i>
+            </div>
+            <div class="task_add_btn">
+                <button class="add_btn me-2">Ajouter</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="created_task d-flex justify-content-between">
+        <div class="task_info d-flex ms-3 my-2">
+            <i class="fa fa-circle-thin"></i>
+            <p>Here is the task info..</p>
+        </div>
+
+        <div class="task_importance my-2">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+        </div>
+    </div>
+
+    <button (click)="toggleCollapse()" class="toggle-button my-3">
+        <span class="arrow me-4" [class.up]="isCollapsed"></span>
+        <span>{{ buttonLabel }}</span>
+      </button>
+      <div *ngIf="!isCollapsed" class="content">
+        <!-- Contenu à afficher ou à masquer -->
+        <div class="created_task d-flex flex-column ms-3 my-2">
+            <div class="d-flex justify-content-between">
+                <p class="ps-3 pt-3">Nom du tâche terminée</p>
+                <i class="fa fa-star pe-3 pt-3"></i>
+            </div>
+            <div>
+                <ul class="d-flex">
+                    <li><i class="fa fa-calendar pe-2"></i>En retard, Hier <span class="point">•</span></li>
+                    <li><i class="fa fa-file pe-2" aria-hidden="true"></i>Paper <span class="point">•</span></li>
+                    <li><i class="fa fa-paperclip pe-2"></i>Fichier Joints <span class="point">•</span></li>
+                    <li class="mt-1"><i class="fa fa-tag pe-2"></i>Orange category</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+
+</div>

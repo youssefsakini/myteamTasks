@@ -1,1 +1,7 @@
-<p>tasks-header works!</p>
+<div class="d-flex justify-content-lg-center justify-content-sm-end header_section">
+    <nav class="d-flex justify-content-center">
+        <ul class="d-flex justify-content-between list-unstyled">
+            <li *ngFor="let item of items"><i [class]="item.icone"></i> {{item.name}}</li>
+        </ul>
+    </nav>
+</div>

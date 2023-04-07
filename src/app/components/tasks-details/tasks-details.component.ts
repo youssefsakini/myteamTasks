@@ -52,14 +52,11 @@ export class TasksDetailsComponent {
 
   openPopupRappel() {
     this.mainPopupService.open(this.idRappel);
-    console.log('inside rappel open popup');
   }
   openPopupEcheance() {
     this.mainPopupService.open(this.idEcheance);
-    console.log('inside echeance open popup');
   }
   openPopupRepeter() {
     this.mainPopupService.open(this.idRepeter);
-    console.log('inside repeter open popup');
   }
 }

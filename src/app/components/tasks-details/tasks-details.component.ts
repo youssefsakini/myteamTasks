@@ -34,7 +34,10 @@ export class TasksDetailsComponent {
   idRappel: string = '01';
   idEcheance: string = '02';
   idRepeter: string = '03';
-  
+
+  //Height
+  rappelHeight: string = "74%"
+  echeanceHeight: string = "74%"
 
   constructor(private help:HelperService, private mainPopupService: MainPopupService){}
 

@@ -1,5 +1,5 @@
 <div [id]="id" class="modal">
-    <div class="modal-content">
+    <div class="modal-content" [ngStyle]="{'height': customHeight, 'widht': customWidth}">
         <span *ngIf="closeBtn" class="close-icon" (click)='closeModal()'>&times;</span>
         <ng-content></ng-content>
     </div>

@@ -9,6 +9,8 @@ import { MainPopupService } from 'src/app/services/main-popup/main-popup.service
 export class MainPopupComponent {
   @Input() closeBtn: boolean = true
   @Input() id: string = 'mainPopUp'
+  @Input() customHeight!: string;
+  @Input() customWidth!: string;
 
   constructor(private mainPopupService: MainPopupService) { }
 

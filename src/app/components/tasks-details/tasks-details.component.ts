@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { HelperService } from 'src/app/services/helper/helper.service';
 import { MainPopupService } from 'src/app/services/main-popup/main-popup.service';
+import { Categories } from 'src/app/types/Categories';
 import { TasksItems } from 'src/app/types/TasksItems';
 
 @Component({
@@ -9,7 +10,7 @@ import { TasksItems } from 'src/app/types/TasksItems';
   styleUrls: ['./tasks-details.component.scss']
 })
 export class TasksDetailsComponent {
-  rappelItems: TasksItems [] = [
+  rappelItems: TasksItems []= [
     {
       id: '01',
       name: 'Rappel',
@@ -25,6 +26,36 @@ export class TasksDetailsComponent {
       name: 'Répéter',
       icone: 'fa fa-refresh'
     }
+  ];
+  categories: Categories[] = [
+    {
+      id: 1,
+      name: 'Green category',
+      color: '#00b09b',
+    },
+    {
+      id: 2,
+      name: 'Blue category',
+      color: '#302b63',
+    },
+    {
+      id: 3,
+      name: 'Purple category',
+      color: '#800080',
+    },
+    {
+      id: 4,
+      name: 'Orange category',
+      color: '#fc4a1a',
+    },    {
+      id: 5,
+      name: 'Yellow category',
+      color: '#cac531',
+    },    {
+      id: 6,
+      name: 'Red category',
+      color: '#b20a2c',
+    },
   ];
   showMenu: boolean = true;
   inputText: string = '';
@@ -50,6 +81,9 @@ export class TasksDetailsComponent {
     this.toggleBtn = !!this.inputText;
   }
 
+  openPopup() {
+    this.mainPopupService.open('mainPopUp');
+  }
   openPopupRappel() {
     this.mainPopupService.open(this.idRappel);
   }

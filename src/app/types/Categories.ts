@@ -1,4 +1,5 @@
 export type Categories = {
     id: number,
-    name: string
+    name: string,
+    color: string
 }

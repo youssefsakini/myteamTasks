@@ -71,10 +71,20 @@
                     </ul>
                 </div>
             </app-main-popup>
+        </div>
 
         <div class="d-flex my-2 bg-white task_hover">
             <i class="fa fa-tag mt-3 ms-2 me-4"></i>
-            <p class="mt-2">Choisir une catégorie</p>
+            <p class="mt-2" (click)="openPopup()">Choisir une catégorie</p>
+
+            <app-main-popup [closeBtn]="true" [customHeight]="'90%'">
+                <ul>
+                    <li class="task_hover" *ngFor="let category of categories" [ngStyle]="{'color': category.color}">
+                        <i class="fa fa-dot-circle-o me-3"></i>
+                        {{category.name}}
+                    </li>
+                </ul>
+            </app-main-popup>
         </div>
     
         <div class="d-flex my-2 bg-white task_hover">
@@ -94,7 +104,7 @@
                 </p>
             </div>
         </div>
-    </div>
+
 
     <div class="details_bottom d-flex justify-content-between p-2 px-3">
         <button class="toggle_menu_btn" (click)="toggleMenu()"><i class="fa fa-arrow-right py-2" aria-hidden="true"></i></button>

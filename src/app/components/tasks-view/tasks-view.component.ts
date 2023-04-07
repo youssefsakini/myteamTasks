@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./tasks-view.component.scss']
 })
 export class TasksViewComponent {
-  isCollapsed = true;
-  buttonLabel = 'Terminées';
+  isCollapsed: boolean = true;
+  buttonLabel: string = 'Terminées';
 
   toggleCollapse() {
     this.isCollapsed = !this.isCollapsed;

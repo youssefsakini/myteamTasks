@@ -22,10 +22,63 @@
     
         <div class="bg-white">
             <ul>
-                <li *ngFor="let item of rappelItems" class="task_hover" [title]="item.name"><i [class]="item.icone +' pe-4'"></i> {{item.name}}</li>
+                <li *ngFor="let item of rappelItems" (click)="item.id == idRappel ? openPopupRappel() : item.id == idEcheance ? openPopupEcheance() : openPopupRepeter()" class="task_hover" [title]="item.name"><i [class]="item.icone +' pe-4'"></i> {{item.name}}</li>
             </ul>
-        </div>
-    
+            <app-main-popup [closeBtn]="true" [id]="idRappel">
+                    <div class="text-center">
+                        <h5>Rappel</h5>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Plus tard dans la journée   <span>17:00</span></li>
+                            <li>Demain   <span>ven., 17:00</span></li>
+                            <li>Semaine prochaine   <span>lun., 17:00</span></li>
+                        </ul>
+                        <ul>
+                            <li>Choisir une date et une heure</li>
+                        </ul>
+                    </div>
+            </app-main-popup>
+            <!-- <app-main-popup [closeBtn]="true" [id]="id">
+                <div *ngFor="let item of rappelItems">
+                    <div *ngIf="item.id === '01';then RappelTemplate"></div>
+                    <div *ngIf="item.id === '02';then EcheanceTemplate"></div>
+                    <div *ngIf="item.id === '03';then RepeteTemplate"></div>
+                </div>
+                <ng-template #RappelTemplate>
+                    <div class="text-center">
+                        <h5>Rappel</h5>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Plus tard dans la journée   <span>17:00</span></li>
+                            <li>Demain   <span>ven., 17:00</span></li>
+                            <li>Semaine prochaine   <span>lun., 17:00</span></li>
+                        </ul>
+                        <ul>
+                            <li>Choisir une date et une heure</li>
+                        </ul>
+                    </div>
+                </ng-template>
+                <ng-template #EcheanceTemplate>EcheanceTemplate</ng-template>
+                <ng-template #RepeteTemplate>RepeteTemplate</ng-template>
+            </app-main-popup> -->
+            <!-- <div class="card" *ngIf="showModal === true; then RappelTemplate"></div> -->
+            <!-- <div class="card d-flex" *ngIf="showModal"> -->
+                <!-- <div class="rappel_title"></div> -->
+                <!-- ttnw class mean : today,tommorow, next week -->
+                <!-- <div class="ttnw">
+                    <ul>
+                        <li>Plus tard dans la journée   <span>17:00</span></li>
+                        <li>Demain   <span>ven., 17:00</span></li>
+                        <li>Semaine prochaine   <span>lun., 17:00</span></li>
+                    </ul>
+                </div>
+                <div></div>
+            </div>
+            <ng-template #EcheanceTemplate></ng-template>
+            <ng-template #RepeteTemplate></ng-template> -->
+        <!-- </div> -->
         <div class="d-flex my-2 bg-white task_hover">
             <i class="fa fa-tag mt-3 ms-2 me-4"></i>
             <p class="mt-2">Choisir une catégorie</p>
@@ -58,4 +111,4 @@
 
   </div>
   
-  <button (click)="toggleMenu()">return</button>
+  <button class="mt-5" (click)="toggleMenu()">return</button>

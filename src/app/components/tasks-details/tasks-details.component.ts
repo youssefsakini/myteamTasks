@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { HelperService } from 'src/app/services/helper/helper.service';
+import { MainPopupService } from 'src/app/services/main-popup/main-popup.service';
 import { TasksItems } from 'src/app/types/TasksItems';
 
 @Component({
@@ -27,12 +29,34 @@ export class TasksDetailsComponent {
   showMenu: boolean = true;
   inputText: string = '';
   toggleBtn: boolean = false;
+  showModal: boolean = false;
+  // Id's PopUps
+  idRappel: string = '01';
+  idEcheance: string = '02';
+  idRepeter: string = '03';
+  
+
+  constructor(private help:HelperService, private mainPopupService: MainPopupService){}
 
   toggleMenu() {
     this.showMenu = !this.showMenu;
+    this.help.toggleMenu(this.showMenu)
   }
 
   toggleAddBtn(){
     this.toggleBtn = !!this.inputText;
+  }
+
+  openPopupRappel() {
+    this.mainPopupService.open(this.idRappel);
+    console.log('inside rappel open popup');
+  }
+  openPopupEcheance() {
+    this.mainPopupService.open(this.idEcheance);
+    console.log('inside echeance open popup');
+  }
+  openPopupRepeter() {
+    this.mainPopupService.open(this.idRepeter);
+    console.log('inside repeter open popup');
   }
 }

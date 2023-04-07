@@ -67,3 +67,12 @@ ul li{
     border-radius: 3px;
     font-size: smaller;
 }
+
+.card {
+    background-color: red;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+  }

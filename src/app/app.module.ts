@@ -7,6 +7,7 @@ import { TasksDetailsComponent } from './components/tasks-details/tasks-details.
 import { TasksViewComponent } from './components/tasks-view/tasks-view.component';
 import { LayoutsComponent } from './layouts/layouts.component';
 import { FormsModule } from '@angular/forms';
+import { MainPopupComponent } from './shared/main-popup/main-popup.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FormsModule } from '@angular/forms';
     TasksHeaderComponent,
     TasksDetailsComponent,
     TasksViewComponent,
-    LayoutsComponent
+    LayoutsComponent,
+    MainPopupComponent
   ],
   imports: [
     BrowserModule,

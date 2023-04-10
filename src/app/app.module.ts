@@ -8,6 +8,7 @@ import { TasksViewComponent } from './components/tasks-view/tasks-view.component
 import { LayoutsComponent } from './layouts/layouts.component';
 import { FormsModule } from '@angular/forms';
 import { MainPopupComponent } from './shared/main-popup/main-popup.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MainPopupComponent } from './shared/main-popup/main-popup.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

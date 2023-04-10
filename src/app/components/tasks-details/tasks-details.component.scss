@@ -1,78 +1,102 @@
-.container {
-    position: absolute;
-    // top: 5;
-    // top: 0;  
-    right: 0;
-    bottom: 0;
-    width: 21vw;
-    height: 90vh;
-    background-color: rgb(247, 247, 247);
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-out;
+.tasks_details_container {
+  // position: absolute;
+  // top: 5;
+  // top: 0;
+  // right: 0;
+  // bottom: 0;
+  flex: 1;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  //   d-flex flex-column justify-content-between
+  //   background-color: rgb(247, 247, 247);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-out;
 }
+
 .hidden {
-    transform: translateX(100%);
-    // right: 100%;
+  display: none;
 }
-.toggle_menu_btn{
-    padding: 0;
-    margin: 0;
-    border: none;
-    background-color: rgb(247, 247, 247);
+
+.visuallyhidden {
+  transform: translateX(100%);
 }
-input{
-    width: 100%;
-    border: none;
+
+// @keyframes move{
+
+//     from {
+//         // transform:translateX(0%);
+//   right: 0%;
+
+//         // display: block;
+//     }
+//     to{
+//         // transform:translateX(200px);
+//         // opacity: 0;
+//   right: -100%;
+
+//       }
+//     }
+.toggle_menu_btn {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: rgb(247, 247, 247);
+}
+input {
+  width: 100%;
+  border: none;
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
-.add_step{
-    background: #fff;
+.add_step {
+  background: #fff;
 }
 
-.task_hover:hover{
-    background-color: rgb(247, 247, 247) !important;
+.task_hover:hover {
+  background-color: rgb(247, 247, 247) !important;
 }
 
-ul{
-    list-style: none;
-    padding: 0;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-ul li{
-    border-bottom: 1px solid rgb(203, 203, 203);
-    padding: 12px;
+ul li {
+  border-bottom: 1px solid rgb(203, 203, 203);
+  padding: 12px;
 }
 
-.add_note{
-    background: #fff;
-    height: 12vh;
+.add_note {
+  background: #fff;
+  height: 12vh;
 }
 //Mise à jour div
 .maj {
-    font-size: smaller;
-    color: rgb(190, 190, 190);
-    padding-left: 18px;
+  font-size: smaller;
+  color: rgb(190, 190, 190);
+  padding-left: 18px;
 }
 
-.details_bottom{
-    border-top: 1px solid rgb(203, 203, 203);
+.details_bottom {
+  border-top: 1px solid rgb(203, 203, 203);
 }
 
-.add_btn{
-    border: none;
-    border-radius: 3px;
-    font-size: smaller;
+.add_btn {
+  border: none;
+  border-radius: 3px;
+  font-size: smaller;
 }
 
 .card {
-    background-color: red;
-    padding: 10px;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    z-index: 1;
-  }
+  background-color: red;
+  padding: 10px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+}

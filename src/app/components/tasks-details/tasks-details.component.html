@@ -1,5 +1,7 @@
-<div class="container d-flex flex-column justify-content-between" [ngClass]="{'hidden': !showMenu}">
-    <div class="details_content">
+<div class="tasks_details_container"
+ id="tasks_details_container">
+
+   <div class="details_content d-flex flex-column align-items-center">
         <div class="add_step mt-2">
             <div class="task_hover d-flex justify-content-between py-3 pe-2">
                 <div class="d-flex justify-content-center align-items-center">
@@ -112,6 +114,7 @@
         <i class="fa fa-trash py-2" aria-hidden="true"></i>
     </div>
 
-  </div>
+   </div>
   
-  <button class="mt-5" (click)="toggleMenu()">return</button>
+   <button class=" mt-5" (click)="toggleMenu()">return</button>
+</div> 

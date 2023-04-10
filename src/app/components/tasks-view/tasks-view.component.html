@@ -37,8 +37,8 @@
         </div>
 
         <div class="task_importance my-4 me-3">
-            <!-- <i class="fa fa-star"></i> -->
-            <i class="fa fa-star-o"></i>
+            <i *ngIf="isImportant" (click)="toggleImportantTask()" class="fa fa-star"></i>
+            <i *ngIf="!isImportant" (click)="toggleImportantTask()" class="fa fa-star-o"></i>
         </div>
     </div>
 

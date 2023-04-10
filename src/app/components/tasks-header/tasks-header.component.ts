@@ -16,7 +16,7 @@ export class TasksHeaderComponent {
     {
       id: '2',
       name:'Important',
-      icone:'fa fa-star'
+      icone:'fa fa-star-o'
     },
     {
       id: '3',
@@ -25,11 +25,16 @@ export class TasksHeaderComponent {
     },    {
       id: '4',
       name:'Courrier avec indicateur',
-      icone:'fa fa-flag'
+      icone:'fa fa-flag-o'
     },    {
       id: '5',
       name:'Tâches',
       icone:'fa fa-home'
+    },    {
+      id: '6',
+      name:'Nouvelle liste',
+      icone:'fa fa-list'
     },
+    
   ];
 }

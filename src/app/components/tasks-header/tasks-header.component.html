@@ -1,5 +1,5 @@
-<div class="d-flex justify-content-lg-center justify-content-sm-end header_section">
-    <nav class="d-flex justify-content-center">
+<div class="d-flex header_section">
+    <nav class="d-flex justify-content-start">
         <ul class="d-flex justify-content-between list-unstyled">
           <li *ngFor="let item of items" class="d-flex">
             <a [routerLink]="[item.link]" class="text-decoration-none"><i [class]="item.icone"></i> {{item.name}}</a>

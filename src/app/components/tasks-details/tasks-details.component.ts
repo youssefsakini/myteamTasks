@@ -7,25 +7,25 @@ import { TasksItems } from 'src/app/types/TasksItems';
 @Component({
   selector: 'app-tasks-details',
   templateUrl: './tasks-details.component.html',
-  styleUrls: ['./tasks-details.component.scss']
+  styleUrls: ['./tasks-details.component.scss'],
 })
 export class TasksDetailsComponent {
-  rappelItems: TasksItems []= [
+  rappelItems: TasksItems[] = [
     {
       id: '01',
       name: 'Rappel',
-      icone: 'fa fa-bell'
+      icone: 'fa fa-bell',
     },
     {
       id: '02',
       name: "Ajouter une date d'échéance",
-      icone: 'fa fa-calendar'
+      icone: 'fa fa-calendar',
     },
     {
       id: '03',
       name: 'Répéter',
-      icone: 'fa fa-refresh'
-    }
+      icone: 'fa fa-refresh',
+    },
   ];
   categories: Categories[] = [
     {
@@ -47,11 +47,13 @@ export class TasksDetailsComponent {
       id: 4,
       name: 'Orange category',
       color: '#fc4a1a',
-    },    {
+    },
+    {
       id: 5,
       name: 'Yellow category',
       color: '#cac531',
-    },    {
+    },
+    {
       id: 6,
       name: 'Red category',
       color: '#b20a2c',
@@ -67,17 +69,25 @@ export class TasksDetailsComponent {
   idRepeter: string = '03';
 
   //Height
-  rappelHeight: string = "74%"
-  echeanceHeight: string = "74%"
+  rappelHeight: string = '74%';
+  echeanceHeight: string = '74%';
 
-  constructor(private help:HelperService, private mainPopupService: MainPopupService){}
+  constructor(
+    private help: HelperService,
+    private mainPopupService: MainPopupService
+  ) {}
 
   toggleMenu() {
     this.showMenu = !this.showMenu;
-    this.help.toggleMenu(this.showMenu)
+    this.help.toggleMenu(this.showMenu);
+    let box = document.getElementById('tasks_details_container')
+        box?.classList.add('visuallyhidden');
+        setTimeout(() => {
+          box?.classList.add('hidden');
+        }, 1000);
   }
 
-  toggleAddBtn(){
+  toggleAddBtn() {
     this.toggleBtn = !!this.inputText;
   }
 

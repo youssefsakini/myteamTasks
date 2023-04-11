@@ -9,8 +9,8 @@ nav{
     height: 7vh;
     align-items: center;
     padding: 0px 30px 0px 80px;
-    // background: rgb(213, 213, 213);
     margin-bottom: 15px;
+    // background: rgb(213, 213, 213);
     left: auto;
     right: auto;
 }
@@ -21,17 +21,20 @@ nav ul{
 }
 
 nav ul li{
-    margin: 0 25px;
+    margin: 0 15px;
+    cursor: pointer;
 }
 
-// nav ul li a{
-//     // color: color(dark-muted);
-//     text-decoration: none;
-//     font-size: 16px;
-//     font-weight: bold;
-//     letter-spacing: 1px;
-//     // @include global-transition;
-//     // &:hover{
-//     //     color: color(light);
-//     // }
-// }
+nav ul li a{
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+nav ul li a:hover{
+    background: rgb(213, 213, 213);  
+    border-radius: 5px;
+}

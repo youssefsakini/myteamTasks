@@ -8,8 +8,13 @@ import { Component } from '@angular/core';
 export class TasksViewComponent {
   isCollapsed: boolean = true;
   buttonLabel: string = 'Terminées';
+  isImportant: boolean = false;
 
   toggleCollapse() {
     this.isCollapsed = !this.isCollapsed;
+  }
+
+  toggleImportantTask(){
+    this.isImportant = !this.isImportant;
   }
 }

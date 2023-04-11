@@ -1,5 +1,9 @@
-<app-tasks-header></app-tasks-header>
-<div class="d-flex row">
-    <app-tasks-view class="col-10"></app-tasks-view>
-    <app-tasks-details class="col-2"></app-tasks-details>
+
+<div class="d-flex flex-row w-100">
+    <div class="bg-danger w-25">
+        nav bar
+    </div>
+    <div class="w-75">
+        <ng-content></ng-content>
+    </div>
 </div>

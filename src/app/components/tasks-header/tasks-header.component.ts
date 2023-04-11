@@ -37,10 +37,16 @@ export class TasksHeaderComponent {
       link: ''
     },    {
       id: '6',
+      name:'Affectées à moi',
+      icone:'fa fa-user-o',
+      link: ''
+    },
+      {
+      id: '7',
       name:'Nouvelle liste',
       icone:'fa fa-list',
       link: ''
-    },
+    }, 
     
   ];
 }

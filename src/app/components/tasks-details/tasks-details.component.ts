@@ -15,16 +15,19 @@ export class TasksDetailsComponent {
       id: '01',
       name: 'Rappel',
       icone: 'fa fa-bell',
+      link: ''
     },
     {
       id: '02',
       name: "Ajouter une date d'échéance",
       icone: 'fa fa-calendar',
+      link: ''
     },
     {
       id: '03',
       name: 'Répéter',
       icone: 'fa fa-refresh',
+      link: ''
     },
   ];
   categories: Categories[] = [

@@ -9,6 +9,9 @@ import { LayoutsComponent } from './layouts/layouts.component';
 import { FormsModule } from '@angular/forms';
 import { MainPopupComponent } from './shared/main-popup/main-popup.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router'
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

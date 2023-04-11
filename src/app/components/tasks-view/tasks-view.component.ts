@@ -17,5 +17,5 @@ export class TasksViewComponent {
   toggleImportantTask(){
     this.isImportant = !this.isImportant;
   }
-
-}
+  
+  }

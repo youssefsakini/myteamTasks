@@ -66,6 +66,8 @@ export class TasksDetailsComponent {
   inputText: string = '';
   toggleBtn: boolean = false;
   showModal: boolean = false;
+  isImportant: boolean = false;
+
   // Id's PopUps
   idRappel: string = '01';
   idEcheance: string = '02';
@@ -94,6 +96,10 @@ export class TasksDetailsComponent {
 
   toggleAddBtn() {
     this.toggleBtn = !!this.inputText;
+  }
+
+  toggleImportantTask(){
+    this.isImportant = !this.isImportant;
   }
 
   openPopup() {

@@ -6,7 +6,8 @@
                     <i class="fa fa-circle-thin ms-2"></i>
                     <h5 class="ms-2">Task title</h5>
                 </div>
-                <i class="fa fa-star-o mt-1"></i>
+                <i *ngIf="isImportant" (click)="toggleImportantTask()" class="fa fa-star" style="cursor: pointer;"></i>
+                <i *ngIf="!isImportant" (click)="toggleImportantTask()" class="fa fa-star-o" style="cursor: pointer;"></i>
             </div>
             <div class="d-flex justify-content-evenly py-2 pe-2">
                 <i class="fa fa-circle-thin mt-2 px-3"></i>

@@ -1,5 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
-import { TasksViewComponent } from './components/tasks-view/tasks-view.component';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',

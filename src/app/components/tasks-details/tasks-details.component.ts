@@ -72,8 +72,10 @@ export class TasksDetailsComponent {
   idRepeter: string = '03';
 
   //Height
-  rappelHeight: string = '74%';
-  echeanceHeight: string = '74%';
+  rappelHeight: string = '69.5%';
+  echeanceHeight: string = '70.5%';
+  repeterHeight: string = '92%'
+  categorieHeight: string = '84%'
 
   constructor(
     private help: HelperService,

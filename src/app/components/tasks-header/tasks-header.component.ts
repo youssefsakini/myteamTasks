@@ -7,8 +7,6 @@ import { TasksItems } from 'src/app/types/TasksItems';
   styleUrls: ['./tasks-header.component.scss']
 })
 export class TasksHeaderComponent {
-  // @Output() myTasksClick = new EventEmitter<void>();
-  // @Output() myDayClick = new EventEmitter<void>();
   items: TasksItems [] = [
     {
       id: '1',
@@ -45,12 +43,4 @@ export class TasksHeaderComponent {
     },
     
   ];
-
-  // onMyTasksClick() {
-  //   this.myTasksClick.emit();
-  // }
-
-  // onMyDayClick() {
-  //   this.myDayClick.emit();
-  // }
 }

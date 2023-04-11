@@ -1,12 +1,9 @@
 <div class="d-flex justify-content-lg-center justify-content-sm-end header_section">
     <nav class="d-flex justify-content-center">
         <ul class="d-flex justify-content-between list-unstyled">
-          <!-- <a class="d-flex text-decoration-none"><li *ngFor="let item of items"><i [class]="item.icone"></i> {{item.name}}</li></a> -->
           <li *ngFor="let item of items" class="d-flex">
             <a [routerLink]="[item.link]" class="text-decoration-none"><i [class]="item.icone"></i> {{item.name}}</a>
           </li>
-          <!-- <a href="" (click)="onMyTasksClick()">My tasks</a>
-          <a href="" (click)="onMyDayClick()">My days</a> -->
         </ul>
     </nav>
 </div>

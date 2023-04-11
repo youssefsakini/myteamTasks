@@ -8,14 +8,4 @@ import { TasksViewComponent } from './components/tasks-view/tasks-view.component
 })
 export class AppComponent {
   title = 'myteamTasks';
-
-  // @ViewChild(TasksViewComponent) tasksView!: TasksViewComponent;
-
-  // onMyTasksClick() {
-  //   this.tasksView.toggleMyTasks();
-  // }
-
-  // onMyDayClick() {
-  //   this.tasksView.toggleMyDay();
-  // }
 }

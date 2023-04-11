@@ -9,9 +9,7 @@ export class TasksViewComponent {
   isCollapsed: boolean = true;
   buttonLabel: string = 'Terminées';
   isImportant: boolean = false;
-  // showMyTasks = true;
-  // showMyDay = false;
-
+  
   toggleCollapse() {
     this.isCollapsed = !this.isCollapsed;
   }
@@ -20,13 +18,4 @@ export class TasksViewComponent {
     this.isImportant = !this.isImportant;
   }
 
-  // toggleMyTasks() {
-  //   this.showMyTasks = true;
-  //   this.showMyDay = false;
-  // }
-
-  // toggleMyDay() {
-  //   this.showMyTasks = false;
-  //   this.showMyDay = true;
-  // }
 }
